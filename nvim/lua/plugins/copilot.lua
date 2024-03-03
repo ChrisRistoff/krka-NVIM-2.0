@@ -1,5 +1,6 @@
 local copilot = {
-    'github/copilot.vim',
+    "github/copilot.vim",
+    config = function()
+    end
 }
-
 return copilot
