@@ -13,7 +13,6 @@ function M.setup()
 		local keymap = vim.keymap.set
 		keymap('n', 'gD', vim.lsp.buf.declaration, vim.tbl_extend("force", opts, { desc = "Go to declaration" }))
 		keymap('n', 'gd', vim.lsp.buf.definition, vim.tbl_extend("force", opts, { desc = "Go to definition" }))
-		keymap('n', 'K', vim.lsp.buf.hover, vim.tbl_extend("force", opts, { desc = "Show hover information" }))
 		keymap('n', 'gi', vim.lsp.buf.implementation,
 			vim.tbl_extend("force", opts, { desc = "Go to implementation" }))
 		keymap('n', '<C-k>', vim.lsp.buf.signature_help,

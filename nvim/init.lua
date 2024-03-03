@@ -1,3 +1,4 @@
+--  Author: Krasen Hristov
 --  Install lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -61,6 +62,8 @@ require("lazy").setup({
 
 	require("plugins.jester"),
 
+	require("plugins.lsp_saga"),
+
 	telescope_setup,
 	telescope_fzf_native_setup,
 	-- add more 
@@ -73,4 +76,5 @@ require("keymaps.general_maps")
 require('keymaps.nvim_tree')
 require("keymaps.fzf")
 require("keymaps.jester")
+require("keymaps.lsp_saga")
 vim.cmd('source /home/krasyo/.config/nvim/lua/keymaps/copilot_keys.vim')
