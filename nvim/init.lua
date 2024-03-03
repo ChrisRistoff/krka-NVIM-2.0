@@ -27,6 +27,7 @@ local comment_lines = require("plugins.comment")
 local copilot = require("plugins.copilot")
 local tree_sitter = require("plugins.tree_sitter")
 local copilot_chat = require("plugins.copilot_chat")
+local jester = require("plugins.jester")
 local telescope_setup, telescope_fzf_native_setup = require("plugins.telescope")
 
 -- require themes
@@ -74,6 +75,8 @@ require("lazy").setup({
 
 	copilot_chat,
 
+	jester,
+
 	telescope_setup,
 	telescope_fzf_native_setup,
 	-- add more 
@@ -87,4 +90,5 @@ require('settings')  -- general neovim settings
 require("keymaps.general_maps")
 require('keymaps.nvim_tree')
 require("keymaps.fzf")
+require("keymaps.jester")
 vim.cmd('source /home/krasyo/.config/nvim/lua/keymaps/copilot_keys.vim')
