@@ -1,4 +1,4 @@
-local nvim_tree_config = {
+return {
   "nvim-tree/nvim-tree.lua",
   version = "*",
   dependencies = {
@@ -12,5 +12,3 @@ local nvim_tree_config = {
     })
   end
 }
-
-return nvim_tree_config

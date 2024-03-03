@@ -1,4 +1,4 @@
-local which_key = {
+return {
     {
         "folke/which-key.nvim",
         event = "VeryLazy",
@@ -13,5 +13,3 @@ local which_key = {
         }
     }
 }
-
-return which_key

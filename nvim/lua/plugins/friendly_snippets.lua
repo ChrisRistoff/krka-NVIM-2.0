@@ -1,5 +1,5 @@
 -- lua/plugins/friendly_snippets.lua
-local plugin = {
+return {
     "rafamadriz/friendly-snippets",
     event = "InsertEnter",  -- Adjust the event as necessary
     after = "L3MON4D3/LuaSnip",  -- Ensure LuaSnip loads first
@@ -14,5 +14,3 @@ local plugin = {
         require("luasnip.loaders.from_vscode").lazy_load()
     end,
 }
-
-return plugin

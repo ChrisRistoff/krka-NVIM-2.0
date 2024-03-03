@@ -1,6 +1,4 @@
-local git_related = {
+return {
   { 'tpope/vim-fugitive' }, 
   { 'tpope/vim-rhubarb' },
 }
-
-return git_related

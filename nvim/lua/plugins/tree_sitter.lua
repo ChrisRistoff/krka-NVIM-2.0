@@ -1,4 +1,4 @@
-local treesitter_config = {
+return {
     {
         "nvim-treesitter/nvim-treesitter",
         dependencies = {
@@ -66,5 +66,3 @@ local treesitter_config = {
         end
     }
 }
-
-return treesitter_config

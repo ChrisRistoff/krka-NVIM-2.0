@@ -1,4 +1,4 @@
-local lua_line = {
+return {
     { -- Set lualine as statusline
     "nvim-lualine/lualine.nvim",
     -- See `:help lualine.txt`
@@ -12,5 +12,3 @@ local lua_line = {
     },
     },
 }
-
-return lua_line

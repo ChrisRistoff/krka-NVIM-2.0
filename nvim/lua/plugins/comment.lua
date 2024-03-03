@@ -1,4 +1,4 @@
-local comment = {
+return {
     { "numToStr/Comment.nvim",
     opts = {
         toggler = {
@@ -8,5 +8,3 @@ local comment = {
 
     } },
 }
-
-return comment

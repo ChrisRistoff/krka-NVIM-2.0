@@ -1,5 +1,3 @@
-local jester = {
+return {
     'David-Kunz/jester',
 }
-
-return jester

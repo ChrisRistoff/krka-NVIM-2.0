@@ -1,6 +1,5 @@
-local copilot = {
+return {
     "github/copilot.vim",
     config = function()
     end
 }
-return copilot
