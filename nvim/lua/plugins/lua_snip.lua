@@ -1,5 +1,5 @@
 return {
-  "L3MON4D3/LuaSnip", 
-  config = function()
-  end,
+    "L3MON4D3/LuaSnip",
+    config = function()
+    end,
 }
