@@ -86,6 +86,8 @@ require("lazy").setup({
 
     require("plugins.indent_line"),
 
+    require("plugins.editor_config"),
+
     telescope_setup,
     telescope_fzf_native_setup,
     -- add more
