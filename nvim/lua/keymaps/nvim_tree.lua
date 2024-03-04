@@ -3,8 +3,11 @@ vim.keymap.set("n", "<F3>", ":NvimTreeToggle<CR>", { noremap = true, silent = tr
 
 -- toggle git ignore files to show or hide
 _G.nvim_tree_git_ignore = false
+
 function nvim_tree_ignore_toggle()
+
     _G.nvim_tree_git_ignore = not _G.nvim_tree_git_ignore
+
     require("nvim-tree").setup({
         git = {
             ignore = _G.nvim_tree_git_ignore
