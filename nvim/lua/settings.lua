@@ -41,8 +41,3 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     group = highlight_group,
     pattern = "*",
 })
-
--- set themes
--- vim.cmd("colorscheme night_owl")
--- vim.cmd("colorscheme calvera")
--- vim.cmd("colorscheme evegarden")
