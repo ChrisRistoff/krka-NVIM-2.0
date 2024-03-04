@@ -28,6 +28,9 @@ vim.o.updatetime = 250
 vim.o.timeout = true
 vim.o.timeoutlen = 300
 
+-- set encoding to UTF-8
+vim.o.encoding = "UTF-8"
+
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = "menuone,noselect"
 
@@ -41,3 +44,8 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     group = highlight_group,
     pattern = "*",
 })
+
+-- set themes
+-- vim.cmd("colorscheme night_owl")
+-- vim.cmd("colorscheme calvera")
+-- vim.cmd("colorscheme evegarden")

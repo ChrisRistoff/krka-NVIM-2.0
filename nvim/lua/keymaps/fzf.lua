@@ -1,5 +1,7 @@
 -- Key mappings for Telescope
 local keymap = vim.keymap.set
+
+-- Telescope key mappings
 keymap("n", "<leader>?", require("telescope.builtin").oldfiles, { desc = "[?] Find recently opened files" })
 keymap("n", "<leader><space>", require("telescope.builtin").buffers, { desc = "[ ] Find existing buffers" })
 keymap("n", "<leader>/", function()
