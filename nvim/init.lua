@@ -1,75 +1,101 @@
 --  Author: Krasen Hristov
---  Install lazy.nvim
+
+
+-- Tell the Lua language server that `vim` is a global variable
+_G.vim = vim
+
+-- setup lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
-	vim.fn.system({
-		"git",
-		"clone",
-		"--filter=blob:none",
-		"https://github.com/folke/lazy.nvim.git",
-		"--branch=stable", -- latest stable release
-		lazypath,
-	})
+    vim.fn.system({
+        "git",
+        "clone",
+        "--filter=blob:none",
+        "https://github.com/folke/lazy.nvim.git",
+        "--branch=stable", -- latest stable release
+        lazypath,
+    })
 end
 vim.opt.rtp:prepend(lazypath)
+
+
 
 -- require the plugin setups
 local git_related = require("plugins.git_related")
 local mason = require("plugins.mason")
 local telescope_setup, telescope_fzf_native_setup = require("plugins.telescope")
 
+
+
 -- setup lazy.nvim with all plugins
 require("lazy").setup({
-	-- themes
-	require("themes.one_dark"),
+    -- themes
+    -- require("themes.night_owl"), -- for night
 
-	-- plugins
-	require("plugins.lua_snip"),
+    -- require("themes.evergarden"), -- for morning
+    -- vim.cmd [[autocmd VimEnter * colorscheme evergarden]],
 
-	require("plugins.friendly_snippets"),
+    -- require("themes.calvera"),
+    -- vim.cmd[[autocmd VimEnter * colorscheme calvera]],
 
-	require("plugins.nvim_tree"),
+    require("themes.gruvbox_baby"),
+    vim.cmd[[autocmd VimEnter * colorscheme gruvbox-baby]],
 
-	require("plugins.autoclose_brackets"),
 
-	git_related[1], -- vim fugitive
-	git_related[2], -- vim rhubarb
 
-	mason[1], mason[2],
+    -- plugins
+    require("plugins.lua_snip"),
 
-	require("plugins.cmp"),
+    require("plugins.friendly_snippets"),
 
-        {
-            "neovim/nvim-lspconfig",
-            config = function()
-                require("plugins.lsp_config").setup()
-            end
-        },
+    require("plugins.nvim_tree"),
 
-	require("plugins.which_key"),
+    require("plugins.autoclose_brackets"),
 
-	require("plugins.git_signs"),
+    git_related[1], -- vim fugitive
+    git_related[2], -- vim rhubarb
 
-	require("plugins.lua_line"),
+    mason[1], mason[2],
 
-	require("plugins.comment"),
+    require("plugins.cmp"),
 
-	require("plugins.copilot"),
+    {
+        "neovim/nvim-lspconfig",
+        config = function()
+            require("plugins.lsp_config").setup()
+        end
+    },
 
-	require("plugins.tree_sitter"),
+    require("plugins.which_key"),
 
-	require("plugins.copilot_chat"),
+    require("plugins.git_signs"),
 
-	require("plugins.jester"),
+    require("plugins.lua_line"),
 
-	require("plugins.lsp_saga"),
+    require("plugins.comment"),
 
-	telescope_setup,
-	telescope_fzf_native_setup,
-	-- add more 
+    require("plugins.copilot"),
+
+    require("plugins.tree_sitter"),
+
+    require("plugins.copilot_chat"),
+
+    require("plugins.jester"),
+
+    require("plugins.lsp_saga"),
+
+    require("plugins.indent_line"),
+
+    telescope_setup,
+    telescope_fzf_native_setup,
+    -- add more
 })
 
-require('settings')  -- general neovim settings
+
+-- general neovim settings
+require('settings')
+
+
 
 -- keymaps imports
 require("keymaps.general_maps")

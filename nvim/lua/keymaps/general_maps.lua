@@ -19,10 +19,16 @@ vim.api.nvim_set_keymap('x', '[', ":move '<-2<CR>gv=gv", { noremap = true, silen
 vim.api.nvim_set_keymap('x', ']', ":move '>+1<CR>gv=gv", { noremap = true, silent = true })
 
 -- fold a code block on curly braces
-vim.api.nvim_set_keymap('n', '<Space>ff', 'zfa}', {noremap = true, silent = true, desc="fold code block in curly braces"})
+vim.api.nvim_set_keymap('n', '<Space>ff', 'zfa}', {
+    noremap = true,
+    silent = true,
+    desc =
+    "fold code block in curly braces"
+})
 
 -- replace all instances of a word
-vim.api.nvim_set_keymap('n', '<leader>rr', ':%s//<Left>', { noremap = true, silent = true, desc="Replace all instances of a word" })
+vim.api.nvim_set_keymap('n', '<leader>rr', ':%s//<Left>',
+    { noremap = true, silent = true, desc = "Replace all instances of a word" })
 
 -- semicolon at the end of a line
 vim.api.nvim_set_keymap('n', '<A-w>', '<Esc>A;<Esc>', { noremap = true, silent = true })
