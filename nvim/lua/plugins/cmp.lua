@@ -1,4 +1,5 @@
--- lua/plugins/cmp.lua
+-- https://github.com/hrsh7th/nvim-cmp
+
 return {
     "hrsh7th/nvim-cmp",
     dependencies = {
@@ -10,7 +11,7 @@ return {
     config = function()
         local cmp = require("cmp")
         local luasnip = require("luasnip")
-        
+
         cmp.setup({
             snippet = {
                 expand = function(args)

@@ -16,7 +16,6 @@ local telescope_setup = {
 
         -- Load the fzf native extension if available
         pcall(require("telescope").load_extension, "fzf")
-
     end
 }
 

@@ -1,26 +1,28 @@
 local opts = { noremap = true, silent = true }
 
-vim.keymap.set('n', '<leader>cd', '<cmd>Lspsaga show_line_diagnostics<CR>', opts)
-vim.keymap.set('n', '<leader>ci', '<cmd>Lspsaga show_cursor_diagnostics<CR>', opts)
+-- Show diagnostics on the current line
+vim.keymap.set('n', '<leader>cd', '<cmd>Lspsaga show_line_diagnostics<CR>', vim.tbl_extend('force', opts, { desc = 'Show Line Diagnostics' }))
 
--- hover doc
-vim.keymap.set('n', 'K', '<cmd>Lspsaga hover_doc<CR>', opts)
+-- Show diagnostics where the cursor is
+vim.keymap.set('n', '<leader>ci', '<cmd>Lspsaga show_cursor_diagnostics<CR>', vim.tbl_extend('force', opts, { desc = 'Show Cursor Diagnostics' }))
 
--- open outgoing and incoming call
-vim.keymap.set('n', '<leader>ce', '<cmd>Lspsaga incoming_calls<CR>', opts)
-vim.keymap.set('n', '<leader>cq', '<cmd>Lspsaga outgoing_calls<CR>', opts)
+-- Hover documentation
+vim.keymap.set('n', 'K', '<cmd>Lspsaga hover_doc<CR>', vim.tbl_extend('force', opts, { desc = 'Hover Documentation' }))
 
--- peek definition
-vim.keymap.set('n', '<leader>ct', '<cmd>Lspsaga peek_type_definition<CR>', opts)
+-- View incoming calls to the symbol under cursor
+vim.keymap.set('n', '<leader>ce', '<cmd>Lspsaga incoming_calls<CR>', vim.tbl_extend('force', opts, { desc = 'Incoming Calls' }))
 
--- finder
-vim.keymap.set('n', '<leader>cf', '<cmd>Lspsaga finder<CR>', opts)
+-- View outgoing calls from the symbol under cursor
+vim.keymap.set('n', '<leader>cq', '<cmd>Lspsaga outgoing_calls<CR>', vim.tbl_extend('force', opts, { desc = 'Outgoing Calls' }))
 
--- outline
-vim.keymap.set('n', '<leader>co', '<cmd>Lspsaga outline<CR>', opts)
+-- Peek type definition without moving
+vim.keymap.set('n', '<leader>ct', '<cmd>Lspsaga peek_type_definition<CR>', vim.tbl_extend('force', opts, { desc = 'Peek Type Definition' }))
 
--- rename
-vim.keymap.set('n', '<leader>cr', '<cmd>Lspsaga rename<CR>', opts)
+-- Finder to search and preview LSP entities
+vim.keymap.set('n', '<leader>cf', '<cmd>Lspsaga finder<CR>', vim.tbl_extend('force', opts, { desc = 'LSP Finder' }))
 
--- help doc
-vim.keymap.set('n', '<leader>ch', '<cmd>Lspsaga signature_help<CR>', opts)
+-- Show outline of the current file
+vim.keymap.set('n', '<leader>co', '<cmd>Lspsaga outline<CR>', vim.tbl_extend('force', opts, { desc = 'LSP Outline' }))
+
+-- Rename the symbol under cursor
+vim.keymap.set('n', '<leader>cr', '<cmd>Lspsaga rename<CR>', vim.tbl_extend('force', opts, { desc = 'Rename Symbol' }))

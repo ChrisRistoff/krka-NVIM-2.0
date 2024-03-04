@@ -4,6 +4,9 @@ vim.o.hlsearch = true
 -- Make line numbers default
 vim.wo.number = true
 
+-- Enable absolute line numbers
+vim.opt.number = true
+
 -- Enable mouse mode
 vim.o.mouse = "a"
 
@@ -28,13 +31,18 @@ vim.o.timeoutlen = 300
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = "menuone,noselect"
 
--- [[ Highlight on yank ]]
+-- Highlight on yank
 -- See `:help vim.highlight.on_yank()`
 local highlight_group = vim.api.nvim_create_augroup("YankHighlight", { clear = true })
 vim.api.nvim_create_autocmd("TextYankPost", {
-	callback = function()
-		vim.highlight.on_yank()
-	end,
-	group = highlight_group,
-	pattern = "*",
+    callback = function()
+        vim.highlight.on_yank()
+    end,
+    group = highlight_group,
+    pattern = "*",
 })
+
+-- set themes
+-- vim.cmd("colorscheme night_owl")
+-- vim.cmd("colorscheme calvera")
+-- vim.cmd("colorscheme evegarden")
