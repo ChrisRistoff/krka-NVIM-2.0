@@ -1,3 +1,5 @@
+-- https://github.com/CopilotC-Nvim/CopilotChat.nvim
+
 return {
     {
         "CopilotC-Nvim/CopilotChat.nvim",

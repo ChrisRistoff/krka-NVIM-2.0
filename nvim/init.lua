@@ -1,5 +1,10 @@
 --  Author: Krasen Hristov
---  Install lazy.nvim
+
+
+-- Tell the Lua language server that `vim` is a global variable
+_G.vim = vim
+
+-- setup lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
     vim.fn.system({
@@ -13,15 +18,30 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+
+
 -- require the plugin setups
 local git_related = require("plugins.git_related")
 local mason = require("plugins.mason")
 local telescope_setup, telescope_fzf_native_setup = require("plugins.telescope")
 
+
+
 -- setup lazy.nvim with all plugins
 require("lazy").setup({
     -- themes
-    require("themes.one_dark"),
+    -- require("themes.night_owl"), -- for night
+
+    -- require("themes.evergarden"), -- for morning
+    -- vim.cmd [[autocmd VimEnter * colorscheme evergarden]],
+
+    -- require("themes.calvera"),
+    -- vim.cmd[[autocmd VimEnter * colorscheme calvera]],
+
+    require("themes.gruvbox_baby"),
+    vim.cmd[[autocmd VimEnter * colorscheme gruvbox-baby]],
+
+
 
     -- plugins
     require("plugins.lua_snip"),
@@ -64,12 +84,18 @@ require("lazy").setup({
 
     require("plugins.lsp_saga"),
 
+    require("plugins.indent_line"),
+
     telescope_setup,
     telescope_fzf_native_setup,
     -- add more
 })
 
-require('settings') -- general neovim settings
+
+-- general neovim settings
+require('settings')
+
+
 
 -- keymaps imports
 require("keymaps.general_maps")

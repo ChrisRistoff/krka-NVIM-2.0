@@ -1,4 +1,5 @@
--- lua/plugins/friendly_snippets.lua
+-- https://github.com/rafamadriz/friendly-snippets
+
 return {
     "rafamadriz/friendly-snippets",
     event = "InsertEnter",      -- Adjust the event as necessary
