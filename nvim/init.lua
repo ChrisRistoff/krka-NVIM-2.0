@@ -88,6 +88,8 @@ require("lazy").setup({
 
     require("plugins.editor_config"),
 
+    require("plugins.mardown_preview"),
+
     telescope_setup,
     telescope_fzf_native_setup,
     -- add more
