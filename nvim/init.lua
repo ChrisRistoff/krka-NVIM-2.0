@@ -94,6 +94,9 @@ require("lazy").setup({
 
     require("plugins.nvim_ufo"),
 
+    require("plugins.startup"),
+
+
     telescope_setup,
     telescope_fzf_native_setup,
     -- add more
