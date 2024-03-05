@@ -90,6 +90,10 @@ require("lazy").setup({
 
     require("plugins.mardown_preview"),
 
+    require("plugins.promise"),
+
+    require("plugins.nvim_ufo"),
+
     telescope_setup,
     telescope_fzf_native_setup,
     -- add more
@@ -102,9 +106,9 @@ require('settings')
 
 
 -- keymaps imports
-require("keymaps.general_maps")
-require('keymaps.nvim_tree')
-require("keymaps.fzf")
-require("keymaps.jester")
-require("keymaps.lsp_saga")
-vim.cmd('source /home/krasyo/.config/nvim/lua/keymaps/copilot_keys.vim')
+require("keymaps.general_keymaps")
+require('keymaps.nvim_tree_keymaps')
+require("keymaps.fzf_keymaps")
+require("keymaps.jester_keymaps")
+require("keymaps.lsp_saga_keymaps")
+vim.cmd('source /home/krasyo/.config/nvim/lua/keymaps/copilot_keymaps.vim')

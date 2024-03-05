@@ -199,3 +199,14 @@ cp -r nvim ~/.config/
 ##### [Repository](https://github.com/folke/which-key.nvim)
 
 - A plugin that provides a key mapping guide for Neovim. Refer to lua/plugins/which_key.lua for custom settings.
+
+### Nvim-ufo
+##### [Repository](https://github.com/kevinhwang91/nvim-ufo)
+
+- A plugin that provides a UFO (Unified File Operations) for Neovim. Refer to lua/plugins/ufo.lua for custom settings.
+
+- #### Key Mappings
+  - `za`: Fold/unfold the current line
+  - `zA`: Fold/unfold the current line recursively
+  - Refer to documentation for more information.
+
