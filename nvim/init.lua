@@ -96,6 +96,9 @@ require("lazy").setup({
 
     require("plugins.startup"),
 
+    require("plugins.hlslens"),
+
+    require("plugins.cursorline"),
 
     telescope_setup,
     telescope_fzf_native_setup,

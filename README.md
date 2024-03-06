@@ -210,3 +210,14 @@ cp -r nvim ~/.config/
   - `zA`: Fold/unfold the current line recursively
   - Refer to documentation for more information.
 
+
+### Cursorline
+##### [Repository](https://github.com/yamatsum/nvim-cursorline)
+
+- A plugin that highlights duplicate words and current line in Neovim. Refer to lua/plugins/cursorline.lua for custom settings.
+
+### hlslens
+##### [Repository](https://github.com/kevinhwang91/nvim-hlslens)
+
+- A plugin that improves the highlighting of search results in Neovim. Refer to lua/plugins/hlslens.lua for custom settings.
+
