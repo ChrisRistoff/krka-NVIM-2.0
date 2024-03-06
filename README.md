@@ -221,3 +221,17 @@ cp -r nvim ~/.config/
 
 - A plugin that improves the highlighting of search results in Neovim. Refer to lua/plugins/hlslens.lua for custom settings.
 
+### fidget.nvim
+##### [Repository](https://github.com/j-hui/fidget.nvim)
+
+- A simple UI for notifications and LSP loading in Neovim. Refer to lua/plugins/fidget.lua for custom settings.
+
+### nvim-neoclip
+##### [Repository](https://github.com/AckslD/nvim-neoclip.lua)
+
+- A clipboard manager for Neovim. It also stores macros. Refer to lua/plugins/neoclip.lua for custom settings.
+
+- #### Key Mappings
+  - `<leader>yy`: Open the clipboard history
+  - `<leader>yq`: Open the macro history
+  - Refer to lua/plugins/neoclip.lua and documentation for more information.
