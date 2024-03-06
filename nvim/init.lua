@@ -106,6 +106,10 @@ require("lazy").setup({
 
     require("plugins.neoclip"),
 
+    require("plugins.scrollbar"),
+
+    require("plugins.cheatsheet"),
+
     telescope_setup,
     telescope_fzf_native_setup,
     -- add more

@@ -235,3 +235,14 @@ cp -r nvim ~/.config/
   - `<leader>yy`: Open the clipboard history
   - `<leader>yq`: Open the macro history
   - Refer to lua/plugins/neoclip.lua and documentation for more information.
+
+
+### cheatsheet.nvim
+##### [Repository](https://github.com/sudormrfbin/cheatsheet.nvim)
+
+- A plugin that provides a cheatsheet for Neovim. Refer to lua/plugins/cheatsheet.lua for custom settings. Type :Cheatsheet to open the cheatsheet. Refer to documentation for more information.
+
+### scrollbar
+##### [Repository](https://github.com/petertriho/nvim-scrollbar)
+
+- A plugin that provides a scrollbar for Neovim. Refer to lua/plugins/scrollbar.lua for custom settings. Refer to documentation for more information.
