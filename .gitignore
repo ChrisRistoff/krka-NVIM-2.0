@@ -1,2 +1,3 @@
 igfile.txt
 nohup.out
+nvim/lua/plugins_secrets/*.lua

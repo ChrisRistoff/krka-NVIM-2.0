@@ -246,3 +246,24 @@ cp -r nvim ~/.config/
 ##### [Repository](https://github.com/petertriho/nvim-scrollbar)
 
 - A plugin that provides a scrollbar for Neovim. Refer to lua/plugins/scrollbar.lua for custom settings. Refer to documentation for more information.
+
+### dadbod-ui
+##### [Repository](https://github.com/kristijanhusak/vim-dadbod-ui?tab=readme-ov-file)
+
+- A plugin that provides a UI for database clients in Neovim. Refer to lua/plugins/dadbod_ui.lua for custom settings. Refer to documentation for more information. :DBUI command is used to run the plugin.
+- To set up DBs you need to add a file called dadbod-ui-dblist.lua in lua/plugins_secrets/ and add the following code:
+```lua
+return {
+    dbs = {
+        {
+            name = "db_1_name",
+            url = "db_1_url"
+        },
+
+        {
+            name = "db_2_name",
+            url = "db_2_url"
+        }
+    }
+}
+```

@@ -110,6 +110,8 @@ require("lazy").setup({
 
     require("plugins.cheatsheet"),
 
+    require("plugins.vim-dadbod-ui"),
+
     telescope_setup,
     telescope_fzf_native_setup,
     -- add more
