@@ -100,6 +100,12 @@ require("lazy").setup({
 
     require("plugins.cursorline"),
 
+    require("plugins.TODO_comments"),
+
+    require("plugins.fidget"),
+
+    require("plugins.neoclip"),
+
     telescope_setup,
     telescope_fzf_native_setup,
     -- add more
@@ -117,4 +123,5 @@ require('keymaps.nvim_tree_keymaps')
 require("keymaps.fzf_keymaps")
 require("keymaps.jester_keymaps")
 require("keymaps.lsp_saga_keymaps")
+require("keymaps.neoclip_keymaps")
 vim.cmd('source /home/krasyo/.config/nvim/lua/keymaps/copilot_keymaps.vim')
