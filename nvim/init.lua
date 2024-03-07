@@ -33,13 +33,10 @@ require("lazy").setup({
     -- require("themes.night_owl"), -- for night
 
     -- require("themes.evergarden"), -- for morning
-    -- vim.cmd [[autocmd VimEnter * colorscheme evergarden]],
 
     -- require("themes.calvera"),
-    -- vim.cmd[[autocmd VimEnter * colorscheme calvera]],
 
     require("themes.gruvbox_baby"),
-    vim.cmd[[autocmd VimEnter * colorscheme gruvbox-baby]],
 
 
 
