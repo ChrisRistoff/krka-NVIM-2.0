@@ -14,12 +14,12 @@ return {
                     color = "error", -- can be a hex color, or a named color (see below)
                     alt = { "FIXME", "BUG", "FIXIT", "ISSUE" }, -- a set of other keywords that all map to this FIX keywords
                 },
-                TODO = { icon = " ", color = "info" },
+                TODO = { icon = " ", color = "info", alt = {"todo"} },
                 HACK = { icon = " ", color = "#A04000" },
-                WARN = { icon = " ", color = "#FF0000", alt = { "WARNING", "XXX" } },
-                PERF = { icon = " ", alt = { "OPTIM", "PERFORMANCE", "OPTIMIZE" } },
-                NOTE = { icon = " ", color = "#00FF00", alt = { "INFO" } },
-                TEST = { icon = "⏲ ", color = "test", alt = { "TESTING", "PASSED", "FAILED" } },
+                WARN = { icon = " ", color = "#FF0000", alt = { "WARNING", "XXX", "warn", "warning", "xxx" } },
+                PERF = { icon = " ", alt = { "OPTIM", "PERFORMANCE", "OPTIMIZE", "perf", "performance", "optimize", "optimise", "OPTIMISE" } },
+                NOTE = { icon = " ", color = "#00FF00", alt = { "INFO", "info", "note" } },
+                TEST = { icon = "⏲ ", color = "test", alt = { "TESTING", "PASSED", "FAILED", "test", "testing", "passed", "failed" } },
             },
             merge_keywords = true,               -- when true, custom keywords will be merged with the defaults
             highlight = {
