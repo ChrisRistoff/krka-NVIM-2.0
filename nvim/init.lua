@@ -20,14 +20,14 @@ vim.opt.rtp:prepend(lazypath)
 
 
 
--- require the plugin setups
+-- info: require where plugins > 1
 local git_related = require("plugins.git_related")
 local mason = require("plugins.mason")
 local telescope_setup, telescope_fzf_native_setup = require("plugins.telescope")
 
 
 
--- setup lazy.nvim with all plugins
+-- info: Setup the plugins
 require("lazy").setup({
     -- themes
     -- require("themes.night_owl"), -- for night
@@ -115,7 +115,8 @@ require("lazy").setup({
 })
 
 
--- general neovim settings
+
+-- info: general settings
 require('settings')
 
 
