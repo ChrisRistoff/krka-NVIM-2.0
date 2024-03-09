@@ -1,4 +1,4 @@
-" accept single character suggestion
+" info: Accept a single character suggestion
 function! SuggestOneCharacter()
 
     let suggestion = copilot#Accept("")
@@ -9,7 +9,7 @@ function! SuggestOneCharacter()
 
 endfunction
 
-" accept single word suggestion
+" info: Accept a single word suggestion
 function! SuggestOneWord()
 
     let suggestion = copilot#Accept("")
@@ -21,7 +21,7 @@ function! SuggestOneWord()
 endfunction
 
 
-" key mappings
+" info: key mappings
 inoremap <expr> <C-Right> SuggestOneCharacter()
 inoremap <expr> <C-l> SuggestOneWord()
 inoremap <C-e> <C-o>:Copilot<CR>

@@ -24,7 +24,8 @@ return {
             local opts = { noremap = true, silent = true }
 
             -- code action when pressing '<leader>ca'
-            buf_set_keymap('n', '<leader>ca', '<cmd>Lspsaga code_action<CR>', opts)
+            -- buf_set_keymap('n', '<leader>ca', '<cmd>Lspsaga code_action<CR>', opts)
+            buf_set_keymap('n', '<A-Enter>', '<cmd>Lspsaga code_action<CR>', opts)
         end
 
         -- Setup lspconfig for tsserver with the custom on_attach function
@@ -34,6 +35,22 @@ return {
 
         -- setup lspconfig for other languages
         require('lspconfig').pyright.setup({
+            on_attach = on_attach,
+        })
+
+        require('lspconfig').jsonls.setup({
+            on_attach = on_attach,
+        })
+
+        require('lspconfig').sqlls.setup({
+            on_attach = on_attach,
+        })
+
+        require('lspconfig').yamlls.setup({
+            on_attach = on_attach,
+        })
+
+        require('lspconfig').omnisharp.setup({
             on_attach = on_attach,
         })
 

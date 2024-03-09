@@ -121,7 +121,7 @@ require('settings')
 
 
 
--- keymaps imports
+-- info: keymaps setup
 require("keymaps.general_keymaps")
 require('keymaps.nvim_tree_keymaps')
 require("keymaps.fzf_keymaps")
