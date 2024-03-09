@@ -71,6 +71,7 @@ cp -r nvim ~/.config/
 - A plugin that integrates GitHub Copilot Chat into Neovim. Refer to lua/plugins/copilot_chat.lua for custom settings.
 
 - ##### Key Mappings
+ - `<leader>ccc`: Chat
  - `<leader>ccb`: Chat using current buffer
  - `<leader>cce`: Chat  using code at the cursor
  - `<leader>cct`: Generate test cases for the current code
