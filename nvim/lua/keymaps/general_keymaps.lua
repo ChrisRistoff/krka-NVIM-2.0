@@ -24,3 +24,5 @@ vim.api.nvim_set_keymap('n', '<leader>rr', ':%s//<Left>',
 
 -- semicolon at the end of a line
 vim.api.nvim_set_keymap('n', '<A-w>', '<Esc>A;<Esc>', { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('n', 'dr', '0d$a', { noremap = true, silent = true })
