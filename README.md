@@ -268,3 +268,12 @@ return {
     }
 }
 ```
+
+### git-messenger.vim
+##### [Repository](https://github.com/rhysd/git-messenger.vim)
+
+- A plugin that provides a Git messenger for Neovim. Refer to lua/plugins/git_messenger.lua for custom settings. Refer to documentation for more information.
+
+- #### Key Mappings
+  - `<leader>gg`: Show the commit message for the current line
+  - Refer to lua/plugins/git_messenger.lua and documentation for more information.
