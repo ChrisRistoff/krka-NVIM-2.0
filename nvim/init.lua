@@ -109,6 +109,8 @@ require("lazy").setup({
 
     require("plugins.vim-dadbod-ui"),
 
+    require("plugins.git_messenger"),
+
     telescope_setup,
     telescope_fzf_native_setup,
     -- add more
@@ -128,4 +130,5 @@ require("keymaps.fzf_keymaps")
 require("keymaps.jester_keymaps")
 require("keymaps.lsp_saga_keymaps")
 require("keymaps.neoclip_keymaps")
+require("keymaps.git_messenger_keymaps")
 vim.cmd('source /home/krasyo/.config/nvim/lua/keymaps/copilot_keymaps.vim')
