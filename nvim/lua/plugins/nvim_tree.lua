@@ -10,7 +10,7 @@ return {
         require("nvim-tree").setup({
             git = {
                 ignore = true
-            }
+            },
         })
     end
 }

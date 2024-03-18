@@ -1,10 +1,19 @@
 local opts = { noremap = true, silent = true }
 
 -- Show diagnostics on the current line
-vim.keymap.set('n', '<leader>cd', '<cmd>Lspsaga show_line_diagnostics<CR>', vim.tbl_extend('force', opts, { desc = 'Show Line Diagnostics' }))
+vim.keymap.set('n', '<leader>cdd', '<cmd>Lspsaga show_line_diagnostics<CR>', vim.tbl_extend('force', opts, { desc = 'Show Line Diagnostics' }))
+
+-- Jump to the next diagnostic
+vim.keymap.set('n', '<leader>cde', '<cmd>Lspsaga diagnostic_jump_prev<CR>', vim.tbl_extend('force', opts, { desc = 'Previous Diagnostic' }))
+
+-- Jump to the previous diagnostic
+vim.keymap.set('n', '<leader>cdq', '<cmd>Lspsaga diagnostic_jump_next<CR>', vim.tbl_extend('force', opts, { desc = 'Next Diagnostic' }))
+
+-- show all diagnostics
+vim.keymap.set('n', '<leader>cda', '<cmd>Lspsaga show_buf_diagnostics<CR>', vim.tbl_extend('force', opts, { desc = 'Show All Diagnostics' }))
 
 -- Show diagnostics where the cursor is
-vim.keymap.set('n', '<leader>ci', '<cmd>Lspsaga show_cursor_diagnostics<CR>', vim.tbl_extend('force', opts, { desc = 'Show Cursor Diagnostics' }))
+vim.keymap.set('n', '<leader>cdc', '<cmd>Lspsaga show_cursor_diagnostics<CR>', vim.tbl_extend('force', opts, { desc = 'Show Cursor Diagnostics' }))
 
 -- Hover documentation
 vim.keymap.set('n', 'K', '<cmd>Lspsaga hover_doc<CR>', vim.tbl_extend('force', opts, { desc = 'Hover Documentation' }))

@@ -47,7 +47,10 @@ return {
             sources = cmp.config.sources({
                 { name = 'nvim_lsp' },
                 { name = 'luasnip' },
-                { name = "lspsaga"},
+                { name = 'lspsaga'},
+                { name = 'buffer' },
+                { name = 'path' },
+                { name = 'treesitter' },
                 -- Add other sources here
             }),
         })
