@@ -41,3 +41,6 @@ vim.api.nvim_set_keymap('n', 'k', 'j', {noremap = true})
 
 -- Move up with 'i'
 vim.api.nvim_set_keymap('n', 'i', 'k', {noremap = true})
+
+-- clear search highlights when pressing escape
+vim.api.nvim_set_keymap('n', '<Esc>', ':noh<CR><Esc>', { noremap = true, silent = true })
