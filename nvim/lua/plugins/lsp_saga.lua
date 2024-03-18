@@ -28,29 +28,38 @@ return {
             buf_set_keymap('n', '<A-Enter>', '<cmd>Lspsaga code_action<CR>', opts)
         end
 
-        -- Setup lspconfig for tsserver with the custom on_attach function
+        -- typescript
         require('lspconfig').tsserver.setup({
             on_attach = on_attach,
         })
 
-        -- setup lspconfig for other languages
+        -- python
         require('lspconfig').pyright.setup({
             on_attach = on_attach,
         })
 
+        -- html
         require('lspconfig').jsonls.setup({
             on_attach = on_attach,
         })
 
+        -- css
         require('lspconfig').sqlls.setup({
             on_attach = on_attach,
         })
 
+        -- yaml
         require('lspconfig').yamlls.setup({
             on_attach = on_attach,
         })
 
+        -- csharp
         require('lspconfig').omnisharp.setup({
+            on_attach = on_attach,
+        })
+
+        -- lua
+        require('lspconfig').lua_ls.setup({
             on_attach = on_attach,
         })
 
