@@ -1,5 +1,5 @@
 -- Nvim Tree
-vim.keymap.set("n", "<F3>", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<A-q>", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
 
 -- toggle git ignore files to show or hide
 _G.nvim_tree_git_ignore = false
