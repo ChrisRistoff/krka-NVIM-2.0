@@ -71,11 +71,11 @@ require("lazy").setup({
 
     require("plugins.comment"),
 
-    require("plugins.copilot"),
+    -- require("plugins.copilot"),
+
+    -- require("plugins.copilot_chat"),
 
     require("plugins.tree_sitter"),
-
-    require("plugins.copilot_chat"),
 
     require("plugins.jester"),
 
@@ -86,10 +86,6 @@ require("lazy").setup({
     require("plugins.editor_config"),
 
     require("plugins.mardown_preview"),
-
-    require("plugins.promise"),
-
-    require("plugins.nvim_ufo"),
 
     require("plugins.startup"),
 
@@ -107,7 +103,7 @@ require("lazy").setup({
 
     require("plugins.cheatsheet"),
 
-    require("plugins.vim-dadbod-ui"),
+    -- require("plugins.vim-dadbod-ui"),
 
     require("plugins.git_messenger"),
 
@@ -131,4 +127,4 @@ require("keymaps.jester_keymaps")
 require("keymaps.lsp_saga_keymaps")
 require("keymaps.neoclip_keymaps")
 require("keymaps.git_messenger_keymaps")
-vim.cmd('source /home/krasyo/.config/nvim/lua/keymaps/copilot_keymaps.vim')
+-- vim.cmd('source /home/krasyo/.config/nvim/lua/keymaps/copilot_keymaps.vim')
