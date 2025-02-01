@@ -45,6 +45,12 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     pattern = "*",
 })
 
+-- colors
+vim.opt.termguicolors = true
+
+-- relative lines
+vim.opt.relativenumber = true
+
 -- set themes
 -- vim.cmd("colorscheme night_owl")
 -- vim.cmd("colorscheme calvera")

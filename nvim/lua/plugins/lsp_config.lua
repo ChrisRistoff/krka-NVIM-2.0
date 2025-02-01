@@ -5,7 +5,7 @@ local M = {}
 function M.setup()
     require("mason").setup()
     require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "tsserver", "pyright", "jsonls", "sqlls", "yamlls" },
+        ensure_installed = { "lua_ls", "ts_ls", "pyright", "jsonls", "sqlls", "yamlls" },
     })
 
     local lspconfig = require("lspconfig")
@@ -37,7 +37,7 @@ function M.setup()
 
     local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-    for _, server in ipairs({ "lua_ls", "tsserver", "pyright", "jsonls", "sqlls", "yamlls" }) do
+    for _, server in ipairs({ "lua_ls", "ts_ls", "pyright", "jsonls", "sqlls", "yamlls" }) do
         lspconfig[server].setup {
             on_attach = on_attach,
             capabilities = capabilities,
