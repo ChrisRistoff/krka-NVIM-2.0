@@ -73,9 +73,9 @@ require("lazy").setup({
 
     -- require("plugins.copilot"),
 
-    -- require("plugins.copilot_chat"),
-
     require("plugins.tree_sitter"),
+
+    -- require("plugins.copilot_chat"),
 
     require("plugins.jester"),
 
@@ -107,6 +107,8 @@ require("lazy").setup({
 
     require("plugins.git_messenger"),
 
+    require("plugins.avante"),
+
     telescope_setup,
     telescope_fzf_native_setup,
     -- add more
@@ -126,5 +128,6 @@ require("keymaps.fzf_keymaps")
 require("keymaps.jester_keymaps")
 require("keymaps.lsp_saga_keymaps")
 require("keymaps.neoclip_keymaps")
-require("keymaps.git_messenger_keymaps")
+require("keymaps.git_keymaps")
+require("keymaps.avante_keymaps")
 -- vim.cmd('source /home/krasyo/.config/nvim/lua/keymaps/copilot_keymaps.vim')
