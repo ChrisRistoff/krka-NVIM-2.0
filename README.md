@@ -30,6 +30,50 @@ cp -r nvim ~/.config/
 
 # Plugins and Key Mappings
 
+### avante.nvim
+##### [Repository](https://github.com/yetone/avante.nvim)
+- An AI-powered coding assistant that integrates with Anthropic's Claude. Refer to lua/plugins/avante.lua for custom settings.
+- Currently the costs do add up quite quickly because of the system and context prompts, if used heavily for a day can reach up to 5-7$ which for a month will add up.
+
+- #### Key Mappings
+  - `<leader>aa`: Open Avante
+  - `<leader>ac`: Open Avante Chat
+  - `<leader>at`: Toggle Avante
+  - `<leader>ar`: Reset Avante context
+  - `<leader>ae`: Save Avante chat
+  - `<leader>ah`: View Avante chat history
+
+  ##### Context Switching
+  - `<leader>cxa`: Reset to basic assistant - refer to avante.lua > default_prompts > system for the 'basic' form of it is.
+  - `<leader>cxb`: Switch to bug analysis context
+  - `<leader>cxp`: Switch to performance context
+  - `<leader>cxr`: Switch to readability context
+  - `<leader>cxs`: Switch to security context
+
+  ##### Specialized Review Commands
+  - `<leader>csb`: Start bug analysis chat
+  - `<leader>csp`: Start performance chat
+  - `<leader>csr`: Start readability chat
+  - `<leader>css`: Start security chat
+
+  ##### Diff and Suggestion Controls
+  - `co`: Apply our changes in diff
+  - `ct`: Apply their changes in diff
+  - `ca`: Apply all their changes
+  - `cb`: Apply both changes
+  - `cc`: Apply changes at cursor
+  - `]x`: Next diff
+  - `[x`: Previous diff
+  - `<M-l>`: Accept suggestion
+  - `<M-]>`: Next suggestion
+  - `<M-[>`: Previous suggestion
+  - `<C-]>`: Dismiss suggestion
+
+  ##### Requirements
+  - Requires an Anthropic API key set in the ANTHROPIC_API_KEY environment variable
+  - Uses Claude 3 Sonnet model by default
+  - Supports various specialized contexts for different types of code review
+
 ### Autoclose.nvim
 ##### [Repository](https://github.com/m4xshen/autoclose.nvim)
 - Automatically closes brackets, quotes, and other pairs. Refer to lua/plugins/autoclose.lua for custom settings.
