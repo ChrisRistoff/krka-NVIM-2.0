@@ -27,7 +27,8 @@ vim.api.nvim_set_keymap('n', '<A-w>', '<Esc>A;<Esc>', { noremap = true, silent =
 
 vim.api.nvim_set_keymap('n', 'dr', '0d$a', { noremap = true, silent = true })
 
-
+-- search methods
+vim.api.nvim_set_keymap('n', '<leader>fm', '/\\v(public|private)\\s+.*\\(\\)<CR>', { noremap = true, silent = true })
 
 -- remap movement keys
 -- Enter insert mode with 'h'
